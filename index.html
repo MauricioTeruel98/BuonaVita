@@ -89,7 +89,7 @@
 
 		<section class="container">
 			<h2 id="titulo-form">Adicionar Paciente</h2>
-			<form id="form-adicionar" onclick="limpiarFormulario()">
+			<form id="form-adicionar">
 				<div class="grupo">
 					<label for="nombre">Nombre:</label>
 					<input id="nombre" name="nombre" type="text" placeholder="Digite el nombre del paciente" class="campo">
@@ -106,7 +106,7 @@
 					<label for="gordura">Porcentaje de gordura:</label>
 					<input id="gordura" name="gordura" type="text" placeholder="Digite Porcentaje de gordura del paciente" class="campo campo-medio">
 				</div>
-				<button id="adicionar-paciente" class="boton bto-principal">Adicionar</button>
+				<button id="adicionar-paciente" class="boton bto-principal" onclick="limpiarFormulario()">Adicionar</button>
 			</form>
 		</section>
 
