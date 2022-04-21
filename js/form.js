@@ -1,7 +1,7 @@
 
 var botonAdicionar = document.querySelector("#adicionar-paciente");
 
-botonAdicionar.addEventListener("click", function(event){
+botonAdicionar.addEventListener("click", function (event) {
 	event.preventDefault();
 
 	var form = document.querySelector("#form-adicionar");
@@ -26,7 +26,7 @@ botonAdicionar.addEventListener("click", function(event){
 	alturaTd.textContent = altura;
 	pesoTd.textContent = peso;
 	gorduraTd.textContent = gordura;
-    imcTd.textContent = calcularIMC(peso,altura);
+	imcTd.textContent = calcularIMC(peso, altura);
 
 	//Creando el elemento paciente
 	pacienteTr.appendChild(nombreTd);
@@ -43,5 +43,5 @@ botonAdicionar.addEventListener("click", function(event){
 });
 
 function limpiarFormulario() {
-    document.getElementById("form-adicionar").reset();
-  }
+	document.getElementById("#form-adicionar").reset();
+}
